@@ -1,14 +1,33 @@
 ---
 title: "Reproducible Research: Peer Assessment 1"
+author: "Alexandre Huynen"
+date: "3/12/2017"
 output: 
   html_document:
     keep_md: true
 ---
 
 
-## Loading and preprocessing the data
-Test
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
 
+## Loading and preprocessing the data
+
+We start by unzipping and loading the data:
+
+```{r}
+unzip("activity.zip")
+data <- read.csv("activity.csv")
+
+str(data)
+```
+
+The variable ```date``` being currently encodded as a ```Factor```, we convert this column to the proper format
+
+```{r}
+
+```
 
 ## What is mean total number of steps taken per day?
 
